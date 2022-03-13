@@ -16,7 +16,7 @@ def import_and_predict(image_data, model):
     prediction = model.predict(img_reshape)
     return prediction
 
-model = tf.keras.models.load_model('DetectCovidPneumonia_RGB.pr')
+model = tf.keras.models.load_model('DetectCovidPneumonia_RGB.py')
 
 st.write("""
          # ***Covid-related Pneumonia detector***
