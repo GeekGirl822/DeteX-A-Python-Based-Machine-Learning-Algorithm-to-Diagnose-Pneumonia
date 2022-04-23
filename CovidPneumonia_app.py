@@ -2,7 +2,6 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image, ImageOps
 import numpy as np
-
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
 # @st.cache(suppress_st_warning=True,allow_output_mutation=True)
@@ -19,11 +18,11 @@ def import_and_predict(image_data, model):
 model = tf.keras.models.load_model('DetectCovidPneumonia_FINAl.h5')
 
 st.write("""
-         # ***Covid-Related Pneumonia detector***
+         # ***Covid-related Pneumonia detector***
          """
          )
 
-st.write("This is a simple image classification web app to predict Covid-Related Pneumonia through chest x-ray images.")
+st.write("This is a simple image classification web app to predict covid-related pneumonia throught chest x-ray images.")
 
 file = st.file_uploader("Please upload an image(jpg) file", type=["jpg"])
 
@@ -41,6 +40,6 @@ else:
         st.snow()
     else:
         st.write("""
-                 ## **Prediction:** You are affected by Covid-Related Pneumonia. Please consult a doctor as soon as possible.
+                 ## **Prediction:** You are affected by covid-related Pneumonia. Please consult a doctor as soon as possible.
                  """
-                 )
+                )
