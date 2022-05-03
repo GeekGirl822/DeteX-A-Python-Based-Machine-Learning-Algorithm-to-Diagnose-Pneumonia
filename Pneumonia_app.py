@@ -37,9 +37,9 @@ else:
                  ## **Prediction:** You have Pneumonia. Please consult a doctor as soon as possible.
                  """
                  )
-        st.snow()
     else:
         st.write("""
                  ## **Prediction:** You are Healthy. Great!!
                  """
                 )
+        st.snow()
