@@ -34,11 +34,11 @@ else:
     pred = prediction[0][0]
     if(pred > 0.5):
         st.write("""
-                 ## **Prediction:** You are affected by covid-related Pneumonia. Please consult a doctor as soon as possible.
+                 ## **Prediction:** You are affected by Pneumonia unrelated to Covid. Please consult a doctor as soon as possible.
                  """
                  )
     else:
         st.write("""
-                 ## **Prediction:** You are affected by Pneumonia unrelated to Covid. Please consult a doctor as soon as possible.
+                 ## **Prediction:** You are affected by covid-related Pneumonia. Please consult a doctor as soon as possible.
                  """
                 )
