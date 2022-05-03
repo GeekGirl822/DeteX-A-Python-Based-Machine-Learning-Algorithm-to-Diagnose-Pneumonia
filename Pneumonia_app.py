@@ -34,12 +34,12 @@ else:
     pred = prediction[0][0]
     if(pred > 0.5):
         st.write("""
-                 ## **Prediction:** You are Healthy. Great!!
+                 ## **Prediction:** You have Pneumonia. Please consult a doctor as soon as possible.
                  """
                  )
         st.snow()
     else:
         st.write("""
-                 ## **Prediction:** You have Pneumonia. Please consult a doctor as soon as possible.
+                 ## **Prediction:** You are Healthy. Great!!
                  """
                 )
